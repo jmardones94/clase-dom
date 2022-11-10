@@ -65,12 +65,17 @@
             </ul>
             <form class="d-flex" role="search">
               <input
+                id="input-search"
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button
+                id="btn-search"
+                class="btn btn-outline-success"
+                type="submit"
+              >
                 Search
               </button>
             </form>
@@ -79,6 +84,20 @@
       </nav>
     </header>
     <main>
+      <section id="create-form">
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre" />
+        <input
+          id="descripcion"
+          type="text"
+          name="descripcion"
+          placeholder="Descripcion"
+        />
+        <input id="precio" type="number" name="precio" placeholder="Precio" />
+        <input id="imagen" type="text" name="imagen" placeholder="Imagen" />
+        <button id="btn-form" class="btn btn-primary" type="submit">
+          Crear item
+        </button>
+      </section>
       <section id="lista-articulos" class="d-flex"></section>
     </main>
     <footer></footer>
